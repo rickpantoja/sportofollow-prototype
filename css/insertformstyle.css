@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    margin: 0;
+    width: 100%;
+    font-family: "Open Sans";
+    font-size: 13px;
+}
+
+/* ---------------------- INDIVIDUAL DATA INSERT PAGE ---------------------- */
+
+.stfheaderinsert {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;    
+    z-index: 999;
+    display: table;
+    border-bottom: 1px solid rgba(47,139,182,1);
+}
+
+.stfheaderinsertrow {
+    display: table-row;
+}
+
+.stfheaderinsertcell {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.stfheaderinsertcell.stflogoinsert { 
+    width: 70%; 
+    padding-left: 15px; 
+}  
+
+.stfheaderinsertcell.hdmenu { 
+    width: 10%;     
+}    
+
+.hdmenubt {     
+    background-color: rgba(47,139,182,1);
+    color: #fff;
+    height: 60px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 4.3em;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.hdmenubt:hover {     
+    background-color: rgba(63,163,204,1);
+    color: #fff;
+}
+
+.hdmenubt.menusel {
+    background-color: rgba(63,163,204,1);
+    color: #fff;
+} 
+
+.stfheaderinsertcell a:link,
+.stfheaderinsertcell a:visited,
+.stfheaderinsertcell a:hover,
+.stfheaderinsertcell a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.stfforminsert {
+    padding-top: 70px;
+}
+
+/* ---------------------- INDIVIDUAL DATA INSERT FORM ---------------------- */
+
+.stfinserttab {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.stfinsertrow {
+    display: table-row;
+    width: 100%;
+}
+
+.stfinsertcell {
+    display: table-cell;
+    /*border: 1px solid #ccc;*/
+}
+
+.stfinsertcell.coldup { width: 44%;}
+.stfinsertcell.colsimp { width: 20%;}
+.stfinsertcell.tag { width: 4%;}
+
+.stfforminsert input[type=text],
+.stfforminsert input[type=date],
+.stfforminsert select,
+.stfforminsert textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    resize: vertical;
+    height: 40px;
+}
+
+.stfforminsert label {
+    padding: 10px 0 5px 0;
+    display: inline-block;
+    color: #104E8B;
+    font-weight: bold;
+}
+
+.stfforminsert input[type=submit],
+.stfforminsertm input[type=submit],
+.buttonback {
+    background-color: rgba(47,139,182,1);
+    color: white;
+    padding: 12px 20px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.buttonback:hover {
+    background-color: rgba(63,163,204,1);
+}
+
+.stfforminsert input[type=submit]:hover,
+.stfforminsertm input[type=submit]:hover {
+    background-color: rgba(63,163,204,1);
+}
+
+/* ---------------------- Radio ---------------------- */
+
+.inline{
+    display: block !important;
+}
+
+.inlinetrue{
+    display: inline-block !important;
+}
+
+.inlinetrue.firstno{
+    margin-left: 15px;
+}
+
+.radiocontainer{
+    color: #c1c1c1;
+    font-size: 13px;
+    position: relative;
+    padding: 10px 0 0 0 !important;
+    font-weight: normal !important;
+}
+
+.radiocontainer span{
+    position: relative;
+    padding-left: 20px;
+}
+
+.radiocontainer span:after{
+    content:'';
+    width:15px;
+    height:15px;
+    border:3px solid;
+    position: absolute;
+    left:0;
+    top:1px;
+    border-radius:100%;
+    -ms-border-radius:100%;
+    -moz-border-radius:100%;
+    -webkit-border-radius:100%;
+    box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+.radiocontainer input[type="radio"]{
+    cursor: pointer; 
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index: 1;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+.radiocontainer input[type="radio"]:checked + span{
+    color: #104E8B; 
+}
+.radiocontainer input[type="radio"]:checked + span:before{
+    content:'';
+    width:5px;
+    height:5px;
+    position: absolute;
+    background: #104E8B;
+    left:5px;
+    top:6px;
+    border-radius:100%;
+    -ms-border-radius:100%;
+    -moz-border-radius:100%;
+    -webkit-border-radius:100%;
+}
+
+.icolinsind {
+    float: left;
+    width: 300px;
+    display: table-cell;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.buttonback3 {
+    background-color: rgba(47,139,182,1);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+}
+
+.buttonback3:hover {
+    background-color: rgba(63,163,204,1);
+}
+
+.stfradiolabel {
+    color: rgba(36,113,174,1);
+    font-weight: 700;
+}
+
+.icolins a:link,
+.icolins a:visited,
+.icolins a:hover,
+.icolins a:active {
+    text-decoration: none;
+}
+
+.endblock {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+/* ---------------------- INDIVIDUAL DATA INSERT DISPLAY TEMP TABLE ---------------------- */
+
+.stfinsertdisplaytb {
+    display: table;
+    width: 92%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.stfinsertdisplayrow {
+    display: table-row;
+    width: 100%;
+}
+
+.stfinsertdisplaycell {
+    display: table-cell;
+    border: 1px solid #ccc;
+    height: 10px;
+    border-color: rgba(47,139,182,1);
+}
+
+.stfinsertdisplayrow.headertb {
+    height: 30px;
+    background-color: rgba(47,139,182,1);
+    color: #fff;
+    text-align: center;    
+}
+
+.stfinsertdisplaycell.hd {
+    vertical-align: middle;
+}
+
+.stfinsertdisplayrow.bodytb {
+    height: 40px;
+    text-align: center;
+}
+
+.stfinsertdisplaycell.bdy {
+    vertical-align: middle;
+}
+
+.flags {
+    height: 30px;
+}
+
+.stfinsertdisplaycell a:link,
+.stfinsertdisplaycell a:visited,
+.stfinsertdisplaycell a:hover,
+.stfinsertdisplaycell a:active {
+    text-decoration: none;
+    color: red;
+}
+
+/* ---------------------- MASS DATA INSERT PAGE ---------------------- */
+
+.errobox {
+    width: 100%;
+    text-align: center;
+}
+
+/* ---------------------- MASS DATA INSERT PAGE COMPONENTS ---------------------- */
+
+.inputfile,
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;  
+}
+
+.inputfile + label {
+    background-color: rgba(47,139,182,1);
+    color: white;
+    border-radius: 2px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 15px 0;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label,
+.inputfile + label:hover {
+    background-color: rgba(63,163,204,1);
+}
+
+/* ---------------------- EDIT/DELETE PAGE ---------------------- */
+
+.stfinsertdisplaytb.editdeletepage {
+    margin-top: 75px;
+}
+
+.stfinsertdisplaytb.editdeletepage {
+    width: 98%;
+}
+
+.stfeditdeleteform input[type=submit] {
+    color: #fff;
+    margin: 0 2px;
+    padding: 5px 5px;
+    border-radius: 2px;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.stfeditdeleteform.editgreen input[type=submit] {
+    background: #5fd38d url('../images/edit2.png') no-repeat center center;
+    background-size: 15px; 
+}
+
+.stfeditdeleteform.deletered input[type=submit] {
+    background: #ff5555 url('../images/delete.png') no-repeat center center;
+    background-size: 15px; 
+}
+
+.stfeditformtext {
+    display: none;
+}
+
+.formtext {
+    text-align: left;
+}

@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    margin: 0;
+    width: 100%;
+    font-family: "Open Sans";
+    font-size: 13px;
+}
+
+/* ---------------------- INFO PAGE HEADER ---------------------- */
+
+.stfheaderinsert {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;    
+    z-index: 999;
+    display: table;
+    border-bottom: 1px solid rgba(47,139,182,1);
+}
+
+.stfheaderinsertrow {
+    display: table-row;
+}
+
+.stfheaderinsertcell {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.stfheaderinsertcell.stflogoinsert { 
+    width: 70%; 
+    padding-left: 15px; 
+}  
+
+.stfheaderinsertcell.hdmenu { 
+    width: 10%;     
+}
+
+/* ---------------------- INFO PAGE BODY ---------------------- */
+
+.stfcontentpage {
+    padding: 70px 0 0 20px;
+    line-height: 1.5em;
+}
